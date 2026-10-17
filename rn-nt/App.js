@@ -1,20 +1,26 @@
 import { StyleSheet } from 'react-native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import MainScreen from './MAIN/MainScreen';
+// import MainScreen from './MAIN/MainScreen';
 import ExerciseScreen from './MAIN/ExerciseScreen';
 import ListScreen from './MAIN/ListScreen';
 import { NavigationContainer } from '@react-navigation/native';
+
+import MainScreen from './MyWork/mainScreen';
 
 const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName='Exercise'>
+      <Stack.Navigator initialRouteName='Work'>
         <Stack.Screen
-          name="Home"
+          name="Work"
           component={MainScreen}
         ></Stack.Screen>
+        {/* <Stack.Screen
+          name="Home"
+          component={MainScreen}
+        ></Stack.Screen> */}
         <Stack.Screen
           name="Exercise"
           component={ExerciseScreen}

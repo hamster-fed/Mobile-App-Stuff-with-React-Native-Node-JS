@@ -1,4 +1,4 @@
-import { Text, StyleSheet, View, FlatList} from 'react-native'
+import { Text, StyleSheet, View, FlatList, Button} from 'react-native'
 
 const students = [
     {
@@ -21,7 +21,7 @@ const students = [
     }
 ]
 
-const ListScreen = () => {
+const ListScreen = (props) => {
     return(
         <View style={styles.container}>
             <Text style={styles.title}> List of Students </Text>
@@ -37,6 +37,10 @@ const ListScreen = () => {
                 }}
             >
             </FlatList>
+            <Button 
+            title='Go Back'
+            onPress={() => props.navigation.goBack()}>
+            </Button>
         </View>
     )
 }

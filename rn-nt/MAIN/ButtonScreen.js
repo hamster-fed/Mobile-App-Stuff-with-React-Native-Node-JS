@@ -11,19 +11,19 @@ const ButtonScreen = (props) => {
             <Text style={styles.title}>Button Screen</Text>
 
             <Button
-                title="Click Me"
-                color='darkblue'
-                onPress={handlePress}
+              title="Click Me"
+              color='darkblue'
+              onPress={handlePress}
             ></Button>
 
             <TouchableOpacity styles={styles.touchBtn} 
             onPress={() => console.log("touch element clicked")}>
-                <Text> Click Touchable Element </Text>
+              <Text> Click Touchable Element </Text>
             </TouchableOpacity>
 
             <TouchableOpacity
             onPress={() => props.navigation.goBack()}>
-                <Text style={styles.flood}> Go Back </Text>
+              <Text style={styles.flood}> Go Back </Text>
             </TouchableOpacity>
         </View>
     )

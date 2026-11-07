@@ -11,6 +11,7 @@ import MenuScreen from './MAIN/MenuScreen';
 import ButtonScreen from './MAIN/ButtonScreen';
 import StudentsScreen from './MAIN/StudentsScreen';
 import BoxScreen from './MAIN/BoxScreen';
+import PostScreen from './screens/PostScreen';
 
 import mainScreen from './MyWork/mainScreen';
 import ProfileScreen from './MyWork/ProfileScreen';
@@ -20,7 +21,11 @@ const Stack = createNativeStackNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName='Box'>
+      <Stack.Navigator initialRouteName='Posts'>
+        <Stack.Screen
+          name='Posts'
+          component={PostScreen}
+        ></Stack.Screen>
         <Stack.Screen
           name="Box"
           component={BoxScreen}

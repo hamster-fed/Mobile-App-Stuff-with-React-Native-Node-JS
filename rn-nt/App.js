@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
-
+// MAIN CATEGORY
 import MainScreen from './MAIN/MainScreen';
 import ExerciseScreen from './MAIN/ExerciseScreen';
 import ListScreen from './MAIN/ListScreen';
@@ -12,7 +12,7 @@ import ButtonScreen from './MAIN/ButtonScreen';
 import StudentsScreen from './MAIN/StudentsScreen';
 import BoxScreen from './MAIN/BoxScreen';
 import PostScreen from './MAIN/MyPostsScreen';
-
+// MYWORK CATEGORY
 import mainScreen from './MyWork/mainScreen';
 import ProfileScreen from './MyWork/ProfileScreen';
 import PostTheftScreen from './MyWork/PostTheftScreen';
@@ -83,4 +83,6 @@ export default function App() {
     </NavigationContainer>
   );
 }
+
+// MAIN2 CATEGORY
 

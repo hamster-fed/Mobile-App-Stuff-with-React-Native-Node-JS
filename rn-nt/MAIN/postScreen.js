@@ -35,4 +35,34 @@ export default class PostScreen extends Component {
       </View>
     )
   }
+
+  
 }
+const styles = StyleSheet.create({
+    screen: {
+        flex: 1,
+        fontSize: 36, 
+        textAlign: 'center',
+        paddingVertical: 10
+    },
+    card: {
+        backgroundColor: 'pink',
+        marginVertical: 10,
+        marginHorizontal: 10,
+        borderRadius: 10,
+        padding: 10
+    },
+    postId: {
+        width: 100,
+        height: 100,
+        backgroundColor: 'white',
+        padding: 5,
+        textAlign: 'center',
+        marginVertical: 5
+    },
+    postTitle: {
+        fontSize: 20,
+        fontWeight: 'bold',
+        textTransform: 'capitalize'
+    }
+  })

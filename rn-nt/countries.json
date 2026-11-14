@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "Cappadocia",
+        "country": "Turkiye",
+        "description": "cappadonia is in turkiye trust"
+    },
+
+    {
+        "id": 2,
+        "name": "Bali",
+        "country": "Indonesia",
+        "description": "indonesia is a city in bali trust"
+    },
+
+    {
+        "id": 3,
+        "name": "Durres",
+        "country": "Albania",
+        "description": "durres is in albania trust"
+    }
+]

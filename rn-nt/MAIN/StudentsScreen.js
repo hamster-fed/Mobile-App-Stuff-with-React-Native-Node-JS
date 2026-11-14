@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Text, View, Button, StyleSheet, TouchableOpacity } from 'react-native';
-import StudentDetails from './MAIN/StudentDetails';
+import StudentDetails from './StudentDetails';
 
 const StudentsScreen = (props) => {
     return(
@@ -15,17 +15,17 @@ const StudentsScreen = (props) => {
             <StudentDetails 
                 name="Andrra" 
                 description="Frontend Developer - React Native"
-                image={require("../assets/student1.webp")}> 
+                image={require("../MyWork/student1.jpg")}> 
             </StudentDetails>
             <StudentDetails 
                 name="Erina" 
                 description="Frontend Developer - JavaScript"
-                image={require("../assets/student2.webp")}> 
+                image={require("../MyWork/student2.jpg")}> 
             </StudentDetails>
             <StudentDetails 
                 name="Amar" 
                 description="Backend Developer - PHP & MySQL"
-                image={require("../assets/student3.webp")}> 
+                image={require("../MyWork/student3.jpg")}> 
             </StudentDetails>
         </View>
     )

@@ -11,17 +11,22 @@ import MenuScreen from './MAIN/MenuScreen';
 import ButtonScreen from './MAIN/ButtonScreen';
 import StudentsScreen from './MAIN/StudentsScreen';
 import BoxScreen from './MAIN/BoxScreen';
-import PostScreen from './screens/PostScreen';
+import PostScreen from './MAIN/MyPostsScreen';
 
 import mainScreen from './MyWork/mainScreen';
 import ProfileScreen from './MyWork/ProfileScreen';
+import PostTheftScreen from './MyWork/PostTheftScreen';
 
 const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName='Posts'>
+      <Stack.Navigator initialRouteName='TheftPosts'>
+        <Stack.Screen
+          name='TheftPosts'
+          component={PostTheftScreen}
+        ></Stack.Screen>
         <Stack.Screen
           name='Posts'
           component={PostScreen}
